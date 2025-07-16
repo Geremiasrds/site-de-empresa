@@ -4,22 +4,22 @@ const servicos = [
   {
     titulo: 'Instalação Técnica',
     descricao: 'Fazemos o vácuo correto, fixação segura e teste de pressão para garantir eficiência e durabilidade.',
-    imagem: '/IMG_20250711_083554.jpg',
+    imagem: '/img-servicos/instalacao.jpg',
   },
   {
     titulo: 'Manutenção Preventiva',
     descricao: 'Limpeza de serpentina, filtro, bandeja e carga de gás para evitar falhas e economizar energia.',
-    imagem: '/IMG_20250711_082954.jpg',
+    imagem: '/img-servicos/preventiva.jpg',
   },
   {
     titulo: 'Recarga de Gás',
     descricao: 'Com balança digital e manômetro, aplicamos a quantidade ideal para seu sistema.',
-    imagem: '/IMG_20250711_083519.jpg',
+    imagem: '/img-servicos/gas.jpg',
   },
   {
     titulo: 'Atendimento Rápido',
     descricao: 'Ligou, atendeu. Garantimos suporte ágil e técnico no mesmo dia (conforme região).',
-    imagem: '/IMG_20250711_082844.jpg',
+    imagem: '/img-servicos/agilidade.jpg',
   },
 ];
 

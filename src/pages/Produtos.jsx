@@ -1,7 +1,7 @@
 import React from 'react'
 import freezer from '../imagens/freezer.webp'
-import camara from '../../D_NQ_NP_2X_705042-MLU79259045825_092024-F.webp'
-import ar from '../../31OxGWbiNPL._UF894,1000_QL80_FMwebp_.webp'
+import camara from '../imagens/camara.webp'
+import ar from '../imagens/frente-ar.webp'
 
 const Produtos = () => (
   <section>
