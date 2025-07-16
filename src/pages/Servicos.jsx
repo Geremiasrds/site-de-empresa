@@ -4,24 +4,25 @@ const servicos = [
   {
     titulo: 'Instalação Técnica',
     descricao: 'Fazemos o vácuo correto, fixação segura e teste de pressão para garantir eficiência e durabilidade.',
-    imagem: '/img-servicos/instalacao.jpg',
+    imagem: './img-servicos/instalacao.jpg',
   },
   {
     titulo: 'Manutenção Preventiva',
     descricao: 'Limpeza de serpentina, filtro, bandeja e carga de gás para evitar falhas e economizar energia.',
-    imagem: '/img-servicos/preventiva.jpg',
+    imagem: './img-servicos/preventiva.jpg',
   },
   {
     titulo: 'Recarga de Gás',
     descricao: 'Com balança digital e manômetro, aplicamos a quantidade ideal para seu sistema.',
-    imagem: '/img-servicos/gas.jpg',
+    imagem: './img-servicos/gas.jpg',
   },
   {
     titulo: 'Atendimento Rápido',
     descricao: 'Ligou, atendeu. Garantimos suporte ágil e técnico no mesmo dia (conforme região).',
-    imagem: '/img-servicos/agilidade.jpg',
+    imagem: './img-servicos/agilidade.jpg',
   },
 ];
+
 
 const Servicos = () => (
   <section className="servicos">
