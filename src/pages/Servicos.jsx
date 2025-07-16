@@ -1,25 +1,31 @@
 import React from 'react';
 
+// Importações corretas das imagens
+import instalacao from '../img-servicos/instalacao.jpg';
+import preventiva from '../img-servicos/preventiva.jpg';
+import gas from '../img-servicos/gas.jpg';
+import agilidade from '../img-servicos/agilidade.jpg';
+
 const servicos = [
   {
     titulo: 'Instalação Técnica',
     descricao: 'Fazemos o vácuo correto, fixação segura e teste de pressão para garantir eficiência e durabilidade.',
-    imagem: '/img-servicos/insstalacao.jpg',
+    imagem: instalacao,
   },
   {
     titulo: 'Manutenção Preventiva',
     descricao: 'Limpeza de serpentina, filtro, bandeja e carga de gás para evitar falhas e economizar energia.',
-    imagem: '/img-servicos/preventiva.jpg',
+    imagem: preventiva,
   },
   {
     titulo: 'Recarga de Gás',
     descricao: 'Com balança digital e manômetro, aplicamos a quantidade ideal para seu sistema.',
-    imagem: '/img-servicos/gas.jpg',
+    imagem: gas,
   },
   {
     titulo: 'Atendimento Rápido',
     descricao: 'Ligou, atendeu. Garantimos suporte ágil e técnico no mesmo dia (conforme região).',
-    imagem: '/img-servicos/agilidade.jpg',
+    imagem: agilidade,
   },
 ];
 
