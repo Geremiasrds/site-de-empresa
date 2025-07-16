@@ -11,7 +11,6 @@ const BotaoWhatsApp = () => {
       rel="noopener noreferrer"
     >
       <FaWhatsapp size={24} />
-      Fale conosco
     </a>
   )
 }

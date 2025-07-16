@@ -6,6 +6,7 @@ import Sobre from './pages/Sobre'
 import Avaliacoes from './pages/Avaliacoes'
 import Contato from './pages/Contato'
 import BotaoWhatsApp from './BotaoWhatsApp'
+import Rodape from './pages/Rodape'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Avaliacoes />
       <Contato />
       <BotaoWhatsApp />
+      <Rodape/>
 
       </div>
 

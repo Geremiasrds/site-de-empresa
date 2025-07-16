@@ -295,7 +295,7 @@ button:focus {
 .whatsapp-button {
   position: fixed;
   bottom: 10px;
-  left: 240px;
+  left: 10px;
   background-color: #25d366;
   color: white;
   font-weight: 700;
@@ -344,6 +344,51 @@ button:focus {
   }
 }
 
+.rodape {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  
+  font-family: "Bacasime Antique", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.container-rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-empresa h4 {
+  margin-bottom: 5px;
+  color: #00ccff;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.redes-sociais a {
+  color: #00ccff;
+  text-decoration: none;
+}
+
+.redes-sociais a:hover {
+  text-decoration: underline;
+}
+
+.direitos {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #999;
+}
+
+
+
 
 
 @media (max-width: 768px) {
@@ -388,5 +433,16 @@ button:focus {
     width: 100%;
     font-size: 0.9rem;
     padding: 8px;
+  }
+  .container-rodape {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .redes-sociais {
+    align-items: flex-end;
   }
 }
