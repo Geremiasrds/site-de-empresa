@@ -36,7 +36,6 @@ const Servicos = () => (
   <section className="servicos">
     <h2>Nossos Serviços</h2>
 
-    {/* Vídeo de demonstração */}
 
     {/* Lista de serviços */}
     <div className="video-container">

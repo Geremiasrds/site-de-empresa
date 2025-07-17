@@ -1,25 +1,54 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import freezer from '../imagens/freezer.webp'
 import camara from '../imagens/camara.webp'
 import ar from '../imagens/frente-ar.webp'
 
 const Produtos = () => {
-  // Número do WhatsApp com DDD, no formato internacional sem o "+"
-  const whatsappNumber = '5591999069633' // substitua pelo seu número real
+  const whatsappNumber = '5591999069633' // seu número
+  const scrollRef = useRef(null)
+  const [paused, setPaused] = useState(false)
 
-  // Função que abre o WhatsApp com uma mensagem personalizada
+  // Função para abrir o WhatsApp e pausar o scroll
   const handleComprar = (produto) => {
-    const message = `Olá! vim atravens do site Big refrigerações, a loja ainda tem  ${produto}`
+    const message = `Olá! vim através do site Big Refrigerações, a loja ainda tem ${produto}`
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
     window.open(url, '_blank')
+
+    // Pausar scroll por 5 segundos
+    setPaused(true)
+    setTimeout(() => {
+      setPaused(false)
+    }, 5000)
   }
+
+  // Rolagem infinita
+  useEffect(() => {
+    const scrollContainer = scrollRef.current
+    let animationFrameId
+
+    const scroll = () => {
+      if (!paused && scrollContainer) {
+        scrollContainer.scrollLeft += 1
+        // Se chegar no final, volta pro início
+        if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+          scrollContainer.scrollLeft = 0
+        }
+      }
+      animationFrameId = requestAnimationFrame(scroll)
+    }
+
+    animationFrameId = requestAnimationFrame(scroll)
+
+    return () => cancelAnimationFrame(animationFrameId)
+  }, [paused])
 
   const produtos = [
     {
       img: ar,
       title: "Ar-condicionado Split 12.000 BTUs",
       desc: "Gás ecológico, inverter e economia de energia.",
-      price: "R$ 2.300,00"
+      price: "R$ 2.300,00",
+      priceOld: "R$ 2.800,00"
     },
     {
       img: ar,
@@ -49,8 +78,8 @@ const Produtos = () => {
 
   return (
     <section>
-      <h2>Máquinas em Destaque</h2>
-      <div className="product-grid">
+      <h2 style={{ textAlign: 'center', marginBottom: '1rem' }}>Máquinas em Destaque</h2>
+      <div className="scroll-container" ref={scrollRef}>
         {produtos.map((item, index) => (
           <div className="product-card" key={index}>
             <img src={item.img} alt={item.title} />
