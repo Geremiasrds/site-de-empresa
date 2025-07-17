@@ -1,10 +1,13 @@
 import React from 'react';
 
-// Importações corretas das imagens
+// Importações das imagens
 import instalacao from '../img-servicos/instalacao.jpg';
 import preventiva from '../img-servicos/preventiva.jpg';
 import gas from '../img-servicos/gas.jpg';
 import agilidade from '../img-servicos/agilidade.jpg';
+
+// Importação do vídeo local
+import videoServico from '../img-servicos/video1.mp4';
 
 const servicos = [
   {
@@ -32,6 +35,16 @@ const servicos = [
 const Servicos = () => (
   <section className="servicos">
     <h2>Nossos Serviços</h2>
+
+    {/* Vídeo de demonstração */}
+
+    {/* Lista de serviços */}
+    <div className="video-container">
+      <video width="100%" height="auto" controls>
+        <source src={videoServico} type="video/mp4" />
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+    </div>
     <div className="servico-grid">
       {servicos.map((servico, index) => (
         <div className="servico-card" key={index}>

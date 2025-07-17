@@ -34,6 +34,27 @@ h1 {
   transition: color 0.3s ease;
 }
 
+.product-grid h3{
+  font-size: 25px;
+  color: #0f172a;
+  background-color: #0f172a11;
+  border-radius: 20px;
+}
+
+.video-container {
+  width: 170px;
+  margin: 0 auto; 
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background: #000;}
+
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;     /* remove espaços extras abaixo do vídeo */
+}
 
 h2 {
   font-family: "Enriqueta", serif;
@@ -42,7 +63,6 @@ h2 {
   padding-left: 1rem;
   color: #0ea5e9;
 }
-
 
 
 .logo-estilizada {
